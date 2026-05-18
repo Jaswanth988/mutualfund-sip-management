@@ -17,6 +17,8 @@ import fundsRoute from "./routes/sipRoute";
 
 import { connectRedis } from "./redis";
 
+require("../middleware/Telemetry");
+
 const app = express();
 
 app.use(cors());
